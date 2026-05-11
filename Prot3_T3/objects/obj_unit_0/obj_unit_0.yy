@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inventory",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_unit_0",
+  "eventList":[],
   "managed":true,
-  "name":"obj_inventory",
+  "name":"obj_unit_0",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inventory",
-    "path":"sprites/spr_inventory/spr_inventory.yy",
+    "name":"spr_unit_0",
+    "path":"sprites/spr_unit_0/spr_unit_0.yy",
   },
   "spriteMaskId":null,
   "visible":true,
