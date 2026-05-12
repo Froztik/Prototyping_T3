@@ -1,7 +1,7 @@
-if other.ShieldwallTrait = true {
-	Shieldwall = true
+if Shieldwall = true {
+	floorbonus = 2
 }
 
-else {
-	Shieldwall = false
+if Shieldwall = false {
+	floorbonus = 0
 }
