@@ -35,6 +35,7 @@
   },
   "name":"Prot3_T3",
   "resources":[
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_stats","path":"objects/obj_stats/obj_stats.yy",},},
     {"id":{"name":"obj_unit_0","path":"objects/obj_unit_0/obj_unit_0.yy",},},
@@ -42,6 +43,7 @@
     {"id":{"name":"spr_inventory","path":"sprites/spr_inventory/spr_inventory.yy",},},
     {"id":{"name":"spr_statbox","path":"sprites/spr_statbox/spr_statbox.yy",},},
     {"id":{"name":"spr_unit_0","path":"sprites/spr_unit_0/spr_unit_0.yy",},},
+    {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
