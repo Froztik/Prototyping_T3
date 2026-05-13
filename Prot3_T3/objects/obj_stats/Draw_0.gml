@@ -24,3 +24,5 @@ draw_text((x-60), (y-25), "6-12")
 //				break;
 //		}
 //}
+
+show_debug_message("gogogaga")
