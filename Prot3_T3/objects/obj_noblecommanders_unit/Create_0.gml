@@ -14,3 +14,6 @@ externalceilingbonus = 0
 tookdamage = false
 crueltarget = noone
 buffed = false
+
+bufftarget1 = noone
+bufftarget2 = noone
