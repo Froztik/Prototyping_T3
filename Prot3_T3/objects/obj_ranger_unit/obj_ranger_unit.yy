@@ -1,17 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"vidarobjekt1",
+  "%Name":"obj_ranger_unit",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"vidarobjekt1",
+  "name":"obj_ranger_unit",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_unitoverlord",
+    "path":"objects/obj_unitoverlord/obj_unitoverlord.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_ranger",
+    "path":"sprites/spr_ranger/spr_ranger.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
