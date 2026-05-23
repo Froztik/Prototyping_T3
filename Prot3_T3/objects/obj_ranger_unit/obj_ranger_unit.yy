@@ -9,8 +9,8 @@
   "name":"obj_ranger_unit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"units",
+    "path":"folders/Objects/units.yy",
   },
   "parentObjectId":{
     "name":"obj_unitoverlord",

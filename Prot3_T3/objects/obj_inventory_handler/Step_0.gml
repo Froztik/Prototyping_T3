@@ -1,1 +1,2 @@
-show_debug_message(unit)
+show_debug_message(global.unit)
+

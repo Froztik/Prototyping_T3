@@ -1,0 +1,2 @@
+
+clicked_cd = false
