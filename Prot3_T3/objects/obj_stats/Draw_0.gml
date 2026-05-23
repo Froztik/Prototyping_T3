@@ -3,12 +3,12 @@ draw_set_font(fnt_stats)
 draw_set_color(c_green)
 draw_set_halign(fa_left)
 
-if obj_inventory_handler.unit = 1 {
+if obj_inventory_handler.hovered_unit = 1 {
 draw_text((x-60), (y-85), "1-5") //Frontline Stat
 draw_text((x-60), (y-25), "1-5") //Midline Stat
 draw_text((x-60), (y+65), "1-5") //Backline Stat
 }
-if obj_inventory_handler.unit = 2 {
+if obj_inventory_handler.hovered_unit = 2 {
 draw_text((x-60), (y-85), "6-12") //Frontline Stat
 draw_text((x-60), (y-25), "1-5") //Midline Stat
 draw_text((x-60), (y+65), "1-5") //Backline Stat

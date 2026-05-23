@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-obj_inventory_handler.hovered_unit = 1
+obj_inventory_handler.hovered_unit = 3

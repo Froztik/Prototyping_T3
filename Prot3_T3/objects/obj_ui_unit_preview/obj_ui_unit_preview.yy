@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inventory_handler",
+  "%Name":"obj_ui_unit_preview",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inventory_handler",
+  "name":"obj_ui_unit_preview",
   "overriddenProperties":[],
   "parent":{
-    "name":"managers",
-    "path":"folders/Objects/managers.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_ui_unit_preview",
+    "path":"sprites/spr_ui_unit_preview/spr_ui_unit_preview.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
