@@ -1,0 +1,1 @@
+global.wavenumber = 1
