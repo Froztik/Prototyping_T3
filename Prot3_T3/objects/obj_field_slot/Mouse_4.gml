@@ -1,3 +1,5 @@
+if obj_controller.phase = obj_controller.setup {
+
 if free {
 	with obj_ui_unit_parent {
 		if clicked = true {
@@ -38,3 +40,5 @@ if free {
 		}
 	}
 }
+
+	}

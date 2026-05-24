@@ -1,10 +1,8 @@
 // Inherit the parent event
 event_inherited();
-
+with obj_controller {
+	if phase = setup {
 
 global.unit = global.footsoldier
 
-//spriteID = layer_sprite_create("Assets_1", 330, 870, spr_footsoldier)
-
-//layer_sprite_xscale(spriteID, 2)
-//layer_sprite_yscale(spriteID, 2)
+	}}
