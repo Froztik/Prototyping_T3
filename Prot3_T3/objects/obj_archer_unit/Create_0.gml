@@ -1,9 +1,9 @@
 maxhealth = 1
 currenthealth = 1
 
-frontline_range = random_range(0, 6)
-midline_range = random_range(4, 16)
-backline_range = random_range(2, 22)
+frontline_range = 0
+midline_range = 0
+backline_range = 0
 
 FragileTrait = true
 SkirmisherTrait = true
@@ -14,3 +14,7 @@ ceilingbonus = 0
 externalceilingbonus = 0
 
 skirmishtarget = noone
+
+inFrontline = false
+inMidline = false
+inBackline = false
