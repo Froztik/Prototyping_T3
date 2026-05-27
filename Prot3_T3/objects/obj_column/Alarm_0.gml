@@ -7,7 +7,7 @@ if columnmemberlocation = true {
 			instance_destroy(attackingenemy)
 		}
 		else {
-			show_debug_message("YEAHWEMURDURED")
+			alarm[1] = 1
 		}
 }
 

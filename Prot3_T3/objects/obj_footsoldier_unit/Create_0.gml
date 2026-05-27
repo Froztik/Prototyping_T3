@@ -1,4 +1,5 @@
 maxhealth = 2
+currenthealth = 2
 
 combat_range = 0
 
@@ -17,3 +18,5 @@ inMidline = false
 inBackline = false
 
 battleChoice = false
+
+lostbattle = false

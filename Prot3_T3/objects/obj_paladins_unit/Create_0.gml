@@ -25,3 +25,5 @@ inMidline = false
 inBackline = false
 
 battleChoice = false
+
+lostbattle = false
