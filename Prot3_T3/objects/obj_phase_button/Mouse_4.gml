@@ -1,12 +1,10 @@
 
 
-with obj_controller {
-	if phase = setup  {
-		phase = battle
-		pauselock = true
+if obj_controller.phase = obj_controller.setup  {
+	obj_controller.phase = obj_controller.battle
+	pauselock = true
+} 
+else if obj_controller.phase = obj_controller.battle and pauselock = false {
+	obj_controller.phase = obj_controller.setup
 
-	} else if phase = battle and pauselock = false {
-		 phase = setup
-
-		}
 }

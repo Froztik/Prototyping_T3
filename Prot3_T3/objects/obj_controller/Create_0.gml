@@ -7,3 +7,5 @@ battle = "Active"
 
 phase = setup 
 wave = global.wavenumber
+
+endlock = false

@@ -1,3 +1,4 @@
-if phase = battle {
-	alarm[0] = 180
+if phase = battle and endlock = false {
+	alarm[0] = 240
+	endlock = true
 }
