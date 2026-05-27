@@ -10,15 +10,15 @@ if obj_controller.phase = obj_controller.battle and battleChoice = false {
 	randomize()
 
 	if inFrontline = true {
-		frontline_range = irandom_range((0 + floorbonus + externalfloorbonus), (6 + ceilingbonus + externalceilingbonus))
+		combat_range = irandom_range((0 + floorbonus + externalfloorbonus), (6 + ceilingbonus + externalceilingbonus))
 	}
 	
 	if inMidline = true {
-		midline_range = irandom_range((4 + floorbonus + externalfloorbonus), (16 + ceilingbonus + externalceilingbonus))
+		combat_range = irandom_range((4 + floorbonus + externalfloorbonus), (16 + ceilingbonus + externalceilingbonus))
 	}
 	
 	if inBackline = true {
-		backline_range = irandom_range((2 + floorbonus + externalfloorbonus), (22 + ceilingbonus + externalceilingbonus))
+		combat_range = irandom_range((2 + floorbonus + externalfloorbonus), (22 + ceilingbonus + externalceilingbonus))
 	}
 	
 	//show_debug_message("Archer values")

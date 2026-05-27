@@ -1,7 +1,6 @@
 maxhealth = 2
-frontline_range = 0
-midline_range = 0
-backline_range = 0
+
+combat_range = 0
 
 ShieldwallTrait = true
 RelentlessTrait = true

@@ -1,9 +1,7 @@
 maxhealth = 3
 currenthealth = 3
 
-frontline_range = 0
-midline_range = 0
-backline_range = 0
+combat_range = 0
 
 UnyieldingTrait = true
 InspiringTrait = true

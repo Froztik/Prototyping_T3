@@ -1,9 +1,7 @@
 maxhealth = 1
 currenthealth = 1
 
-frontline_range = 0
-midline_range = 0
-backline_range = 0
+combat_range = 0
 
 FragileTrait = true
 SkirmisherTrait = true

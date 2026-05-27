@@ -1,3 +1,3 @@
 if phase = battle {
-	alarm[0] = 60
+	//draw_text(obj_unitoverlord.x, obj_unitoverlord.y, obj_unitoverlord.combat_range)
 }
