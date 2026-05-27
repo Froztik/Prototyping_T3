@@ -1,7 +1,7 @@
 maxhealth = 2
-frontline_range = random_range(6, 18)
-midline_range = random_range(6, 12)
-backline_range = random_range(0, 2)
+frontline_range = 0
+midline_range = 0
+backline_range = 0
 
 ShieldwallTrait = true
 RelentlessTrait = true
@@ -12,3 +12,9 @@ ceilingbonus = 0
 externalceilingbonus = 0
 
 Shieldwall = false
+
+inFrontline = false
+inMidline = false
+inBackline = false
+
+battleChoice = false

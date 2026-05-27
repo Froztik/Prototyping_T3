@@ -1,9 +1,9 @@
 maxhealth = 3
 currenthealth = 3
 
-frontline_range = random_range(8, 25)
-midline_range = random_range(2, 10)
-backline_range = random_range(0, 4)
+frontline_range = 0
+midline_range = 0
+backline_range = 0
 
 UnyieldingTrait = true
 InspiringTrait = true
@@ -21,3 +21,9 @@ buffed = false
 
 paladinfloorbuff = 0
 paladinceilingbuff = 0
+
+inFrontline = false
+inMidline = false
+inBackline = false
+
+battleChoice = false

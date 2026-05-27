@@ -22,3 +22,27 @@
 	
 //	buffed = true
 //}
+
+// battle phase code
+if obj_controller.phase = obj_controller.battle and battleChoice = false {
+	randomize()
+
+	if inFrontline = true {
+		frontline_range = irandom_range((8 + floorbonus + externalfloorbonus), (25 + ceilingbonus + externalceilingbonus))
+	}
+	
+	if inMidline = true {
+		midline_range = irandom_range((2 + floorbonus + externalfloorbonus), (10 + ceilingbonus + externalceilingbonus))
+	}
+	
+	if inBackline = true {
+		backline_range = irandom_range((0 + floorbonus + externalfloorbonus), (4 + ceilingbonus + externalceilingbonus))
+	}
+	
+	battleChoice = true
+	
+}
+
+if obj_controller.phase = obj_controller.setup {
+	battleChoice = false
+}
