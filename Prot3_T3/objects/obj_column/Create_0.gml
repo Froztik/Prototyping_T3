@@ -9,3 +9,6 @@ columnmember2 = noone
 columnmember3 = noone
 
 totalpower = 0
+
+lock = false
+attackingenemy = noone

@@ -25,3 +25,10 @@ if columnmemberlocation = true {
 totalpower = member1Power + member2Power + member3Power
 show_debug_message(totalpower)
 show_debug_message("divider")
+
+// Battlecode
+
+if obj_controller.phase = obj_controller.battle and lock = false {
+	alarm[0] = 180
+	lock = true
+}
