@@ -2,7 +2,8 @@
 event_inherited();
 with obj_controller {
 	if phase = setup {
-
-global.unit = global.footsoldier
-
-	}}
+		if obj_ui_footsoldier.amount > 0 {
+			global.unit = global.footsoldier
+		}
+	}
+}

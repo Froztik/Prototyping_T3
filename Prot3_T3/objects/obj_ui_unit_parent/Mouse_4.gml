@@ -10,7 +10,7 @@
 
 			if clicked = true {
 				with obj_field_slot {
-					if (free == true) {
+					if (free == true) && (obj_ui_unit_parent.amount > 0) {
 						show_debug_message("clicked")
 						sprite_index = spr_freeSlot
 			
