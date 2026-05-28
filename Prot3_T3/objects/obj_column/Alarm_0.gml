@@ -12,3 +12,4 @@ if columnmemberlocation = true {
 }
 
 columnmemberlocation = false
+lock = false

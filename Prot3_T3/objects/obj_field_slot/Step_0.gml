@@ -2,7 +2,7 @@
 if place_meeting(x, y, obj_unitoverlord) {
 	free = false
 	image_alpha = 0
-	show_debug_message("free: " + string(free))
+	//show_debug_message("free: " + string(free))
 }
 if free = true {
 	image_alpha = 1

@@ -1,8 +1,8 @@
 instance_destroy(obj_enemy)
 
-endlock = false
-
 phase = setup
+
+endlock = false
 
 obj_phase_button.pauselock = false
 

@@ -4,25 +4,25 @@ finalEnemyPower = 1
 
 show_debug_message(finalEnemyPower)
 
-if global.wavenumber >= 1 and global.wavenumber <= 4 {
+if obj_controller.wave >= 1 and obj_controller.wave <= 4 {
 	randomize()
-	enemypower = irandom_range(8, 22)
+	enemypower = irandom_range(4, 12)
 }
-if global.wavenumber >= 5 and global.wavenumber <= 9 {
+if obj_controller.wave >= 5 and obj_controller.wave <= 9 {
 	randomize()
-	enemypower = irandom_range(16, 44)
+	enemypower = irandom_range(8, 24)
 }
-if global.wavenumber >= 10 and global.wavenumber <= 14 {
+if obj_controller.wave >= 10 and obj_controller.wave <= 14 {
 	randomize()
-	enemypower = irandom_range(32, 88)
+	enemypower = irandom_range(16, 48)
 }
-if global.wavenumber >= 15 and global.wavenumber <= 19 {
+if obj_controller.wave >= 15 and obj_controller.wave <= 19 {
 	randomize()
-	enemypower = irandom_range(64, 176)
+	enemypower = irandom_range(32, 96)
 }
-if global.wavenumber >= 20 {
+if obj_controller.wave >= 20 {
 	randomize()
-	enemypower = irandom_range(128, 352)
+	enemypower = irandom_range(64, 192)
 }
 
 randomize()
