@@ -41,3 +41,11 @@ else {
 if unitDiedHere = true {
 	finalEnemyPower = finalEnemyPower + 10
 }
+
+randomtilt = 0
+pick = 0
+stumbleX = 0
+stumbleY = 0
+
+retreat = 0
+retreatlock = false

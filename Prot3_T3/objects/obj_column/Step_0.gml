@@ -29,6 +29,6 @@ show_debug_message("divider")
 // Battlecode
 
 if obj_controller.phase = obj_controller.battle and lock = false {
-	alarm[0] = 180
+	alarm[0] = 100
 	lock = true
 }

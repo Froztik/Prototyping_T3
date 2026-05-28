@@ -1,5 +1,5 @@
 if phase = battle and endlock = false {
-	alarm[0] = 240
+	alarm[0] = 200
 	endlock = true
 }
 
