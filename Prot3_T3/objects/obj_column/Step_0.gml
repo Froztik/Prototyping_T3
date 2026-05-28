@@ -1,6 +1,4 @@
 columnmemberlocation = place_meeting(x, y + 60, obj_unitoverlord)
-show_debug_message("HIIII")
-show_debug_message(columnmemberlocation)
 
 if columnmemberlocation = true {
 	columnmember1 = instance_nearest(x, y + 60, obj_unitoverlord)
@@ -12,8 +10,6 @@ else {
 }
 
 columnmemberlocation = place_meeting(x, y + 130, obj_unitoverlord)
-show_debug_message("HEEEE")
-show_debug_message(columnmemberlocation)
 
 if columnmemberlocation = true {
 	columnmember2 = instance_nearest(x, y + 130, obj_unitoverlord)
@@ -25,8 +21,6 @@ else {
 }
 
 columnmemberlocation = place_meeting(x, y + 220, obj_unitoverlord)
-show_debug_message("HAAAA")
-show_debug_message(columnmemberlocation)
 
 if columnmemberlocation = true {
 	columnmember3 = instance_nearest(x, y + 220, obj_unitoverlord)
@@ -38,8 +32,6 @@ else {
 }
 
 totalpower = member1Power + member2Power + member3Power
-show_debug_message(totalpower)
-show_debug_message("divider")
 
 // Battlecode
 
