@@ -27,3 +27,5 @@ inBackline = false
 battleChoice = false
 
 lostbattle = false
+
+mySlot = noone
