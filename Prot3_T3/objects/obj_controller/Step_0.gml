@@ -9,3 +9,12 @@ if phase = battle and endlock = false {
 //	obj_winsymbol.lock = false
 //	obj_losssymbol.lock = false
 //}
+
+
+with obj_unitoverlord {
+	if place_meeting(x, y, obj_field_slot) {
+			drafted = true
+		}
+}
+
+

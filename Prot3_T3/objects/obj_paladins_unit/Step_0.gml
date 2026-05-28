@@ -1,3 +1,5 @@
+event_inherited()
+
 //bufftarget1 = place_meeting(x - 32, y, obj_unitoverlord)
 //bufftarget2 = place_meeting(x + 32, y, obj_unitoverlord)
 //bufftarget3 = place_meeting(x, y - 32, obj_unitoverlord)

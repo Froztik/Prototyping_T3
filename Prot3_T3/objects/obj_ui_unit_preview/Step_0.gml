@@ -1,8 +1,16 @@
-if global.unit = 0 {image_alpha = 0}
+if global.unit = 0 {
+	image_alpha = 0
+	store_lock = false
+}
 
 if global.unit = global.paladin {
 	image_alpha = 1
 	image_index = 1
+	if obj_ui_unit_parent.amount = 1 && store_lock = false {
+		instance_create_layer((x+100), (y-50), "Linst_stats", obj_stored_unit)
+		
+		store_lock = true
+	}
 }
 
 if global.unit = global.footsoldier {
@@ -14,6 +22,9 @@ if global.unit = global.archer {
 	image_alpha = 1
 	image_index = 3
 }
+
+
+
 
 
 // ATTEMPTING TO DISPLAY THE UNITS STORED IN INVENTORY AND THEIR CURRENT HEALTH:

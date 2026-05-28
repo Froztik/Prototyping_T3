@@ -6,6 +6,8 @@
 //}
 
 // Skirmish
+event_inherited()
+
 if currenthealth <= 0 and place_meeting(x, y + 90, obj_unitoverlord) = true {
 	currenthealth = 1
 	skirmishtarget = instance_position(x, y + 90, obj_unitoverlord)
