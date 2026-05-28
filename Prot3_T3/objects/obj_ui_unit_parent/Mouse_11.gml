@@ -1,2 +1,5 @@
 
 instance_destroy(obj_stats)
+instance_destroy(obj_Paltraits)
+instance_destroy(obj_Fottraits)
+instance_destroy(obj_Archtraits)

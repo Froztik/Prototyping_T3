@@ -29,5 +29,7 @@ battleChoice = false
 lostbattle = false
 
 mySlot = noone
+mycolumn = noone
+attacker = noone
 
 proxCheck = noone

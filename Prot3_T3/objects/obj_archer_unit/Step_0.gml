@@ -24,7 +24,7 @@ if obj_controller.phase = obj_controller.battle and battleChoice = false {
 	}
 	
 	if inMidline = true {
-		combat_range = irandom_range((4 + floorbonus + externalfloorbonus), (16 + ceilingbonus + externalceilingbonus))
+		combat_range = irandom_range((8 + floorbonus + externalfloorbonus), (16 + ceilingbonus + externalceilingbonus))
 	}
 	
 	if inBackline = true {

@@ -18,3 +18,7 @@ wave += 1
 
 obj_column.succeeded = false
 obj_column.failed = false
+
+if instance_exists(obj_paladins_unit) = true{
+	obj_paladins_unit.buffed = false
+}

@@ -1,9 +1,7 @@
 event_inherited()
 
-//paladinfloorbuff = (maxhealth - currenthealth) - 1
-//paladinceilingbuff = (maxhealth - currenthealth) + 1
-
-paladinfloorbuff = 6
+paladinfloorbuff = 3
+paladinceilingbuff = 3
 
 if paladinfloorbuff <= 0 {
 	paladinfloorbuff = 0
@@ -65,11 +63,11 @@ if obj_controller.phase = obj_controller.battle and battleChoice = false {
 	randomize()
 
 	if inFrontline = true {
-		combat_range = irandom_range((8 + floorbonus + externalfloorbonus), (25 + ceilingbonus + externalceilingbonus))
+		combat_range = irandom_range((12 + floorbonus + externalfloorbonus), (25 + ceilingbonus + externalceilingbonus))
 	}
 	
 	if inMidline = true {
-		combat_range = irandom_range((2 + floorbonus + externalfloorbonus), (10 + ceilingbonus + externalceilingbonus))
+		combat_range = irandom_range((4 + floorbonus + externalfloorbonus), (10 + ceilingbonus + externalceilingbonus))
 	}
 	
 	if inBackline = true {
@@ -82,7 +80,6 @@ if obj_controller.phase = obj_controller.battle and battleChoice = false {
 
 if obj_controller.phase = obj_controller.setup {
 	battleChoice = false
-	buffed = false
 	
 	//bufftarget1.externalceilingbonus = 0
 	//bufftarget1.externalfloorbonus = 0
@@ -94,9 +91,15 @@ if obj_controller.phase = obj_controller.setup {
 	//bufftarget4.externalfloorbonus = 0
 }
 
+attacker = instance_nearest(x, y, obj_enemy)
+mycolumn = instance_nearest(x, y, obj_column)
+
 // Death
-if currenthealth <= 0 {
+if currenthealth <= 0 and attacker.finalEnemyPower >= mycolumn.totalpower + 10 {
 	mySlot = instance_nearest(x, y, obj_field_slot)
 	mySlot.free = true
 	instance_destroy(self)
+}
+else if currenthealth <= 0 {
+	currenthealth = currenthealth + 1
 }

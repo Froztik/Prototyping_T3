@@ -11,10 +11,9 @@ if phase = battle and endlock = false {
 //}
 
 
-with obj_unitoverlord {
-	if place_meeting(x, y, obj_field_slot) {
-			drafted = true
-		}
-}
+
+if place_meeting(x, y, obj_field_slot) {
+		obj_unitoverlord.drafted = true
+	}
 
 
