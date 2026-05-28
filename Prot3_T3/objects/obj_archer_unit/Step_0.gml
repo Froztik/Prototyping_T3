@@ -37,3 +37,10 @@ if obj_controller.phase = obj_controller.battle and battleChoice = false {
 if obj_controller.phase = obj_controller.setup {
 	battleChoice = false
 }
+
+// Death
+if currenthealth <= 0 {
+	mySlot = instance_nearest(x, y, obj_field_slot)
+	mySlot.free = true
+	instance_destroy(self)
+}
