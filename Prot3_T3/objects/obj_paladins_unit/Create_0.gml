@@ -29,3 +29,5 @@ battleChoice = false
 lostbattle = false
 
 mySlot = noone
+
+proxCheck = noone

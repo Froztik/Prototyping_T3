@@ -1,29 +1,64 @@
 event_inherited()
 
-//bufftarget1 = place_meeting(x - 32, y, obj_unitoverlord)
-//bufftarget2 = place_meeting(x + 32, y, obj_unitoverlord)
-//bufftarget3 = place_meeting(x, y - 32, obj_unitoverlord)
-//bufftarget4 = place_meeting(x, y + 32, obj_unitoverlord)
-
 //paladinfloorbuff = (maxhealth - currenthealth) - 1
 //paladinceilingbuff = (maxhealth - currenthealth) + 1
 
-//if paladinfloorbuff <= 0 {
-//	paladinfloorbuff = 0
-//}
+paladinfloorbuff = 6
 
-//if buffed = false {
-//	bufftarget1.externalceilingbonus += paladinceilingbuff
-//	bufftarget1.externalfloorbonus += paladinfloorbuff
-//	bufftarget2.externalceilingbonus += paladinceilingbuff
-//	bufftarget2.externalfloorbonus += paladinfloorbuff
-//	bufftarget3.externalceilingbonus += paladinceilingbuff
-//	bufftarget3.externalfloorbonus += paladinfloorbuff
-//	bufftarget4.externalceilingbonus += paladinceilingbuff
-//	bufftarget4.externalfloorbonus += paladinfloorbuff
+if paladinfloorbuff <= 0 {
+	paladinfloorbuff = 0
+}
+
+proxCheck = place_meeting(x - 60, y, obj_unitoverlord)
+
+if proxCheck = true and buffed = false {
+	bufftarget1 = instance_nearest(x - 60, y, obj_unitoverlord)
 	
-//	buffed = true
-//}
+	bufftarget1.externalceilingbonus += paladinceilingbuff
+	bufftarget1.externalfloorbonus += paladinfloorbuff
+	
+	proxCheck = false
+	
+	show_debug_message("debug")
+	show_debug_message(bufftarget1.externalfloorbonus)
+}
+
+proxCheck = place_meeting(x + 32, y, obj_unitoverlord)
+
+if proxCheck = true and buffed = false {
+	bufftarget2 = instance_nearest(x - 32, y, obj_unitoverlord)
+	
+	bufftarget2.externalceilingbonus += paladinceilingbuff
+	bufftarget2.externalfloorbonus += paladinfloorbuff
+	
+	proxCheck = false
+}
+
+proxCheck = place_meeting(x, y - 32, obj_unitoverlord)
+
+if proxCheck = true and buffed = false {
+	bufftarget3 = instance_nearest(x - 32, y, obj_unitoverlord)
+	
+	bufftarget3.externalceilingbonus += paladinceilingbuff
+	bufftarget3.externalfloorbonus += paladinfloorbuff
+	
+	proxCheck = false
+}
+
+proxCheck = place_meeting(x, y - 32, obj_unitoverlord)
+
+if proxCheck = true and buffed = false {
+	bufftarget4 = instance_nearest(x - 32, y, obj_unitoverlord)
+	
+	bufftarget4.externalceilingbonus += paladinceilingbuff
+	bufftarget4.externalfloorbonus += paladinfloorbuff
+	
+	proxCheck = false
+}
+
+if buffed = false {
+	buffed = true
+}
 
 // battle phase code
 if obj_controller.phase = obj_controller.battle and battleChoice = false {
@@ -47,6 +82,16 @@ if obj_controller.phase = obj_controller.battle and battleChoice = false {
 
 if obj_controller.phase = obj_controller.setup {
 	battleChoice = false
+	buffed = false
+	
+	//bufftarget1.externalceilingbonus = 0
+	//bufftarget1.externalfloorbonus = 0
+	//bufftarget2.externalceilingbonus = 0
+	//bufftarget2.externalfloorbonus = 0
+	//bufftarget3.externalceilingbonus = 0
+	//bufftarget3.externalfloorbonus = 0
+	//bufftarget4.externalceilingbonus = 0
+	//bufftarget4.externalfloorbonus = 0
 }
 
 // Death
