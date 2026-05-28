@@ -12,3 +12,6 @@ totalpower = 0
 
 lock = false
 attackingenemy = noone
+
+succeeded = false
+failed = false

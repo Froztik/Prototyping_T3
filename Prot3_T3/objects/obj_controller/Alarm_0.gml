@@ -15,3 +15,6 @@ instance_create_layer(1408, 192, "Instances", obj_enemy)
 instance_create_layer(1504, 192, "Instances", obj_enemy)
 
 wave += 1
+
+obj_column.succeeded = false
+obj_column.failed = false

@@ -4,9 +4,11 @@ if columnmemberlocation = true {
 	attackingenemy = instance_nearest(x, y - 90, obj_enemy)
 
 		if attackingenemy.finalEnemyPower <= totalpower {
+			succeeded = true
 			attackingenemy.alarm[0] = 1
 		}
 		else {
+			failed = true
 			attackingenemy.alarm[1] = 1
 			alarm[1] = 1
 		}

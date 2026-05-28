@@ -22,3 +22,4 @@ battleChoice = false
 lostbattle = false
 
 mySlot = noone
+myColumn = noone

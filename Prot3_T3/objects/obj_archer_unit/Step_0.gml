@@ -1,6 +1,14 @@
-if currenthealth <= 0 and place_meeting(x - 20, y, obj_unitoverlord) = true {
+// Fragile
+//myColumn = instance_nearest(x, y, obj_column)
+
+//if myColumn.succeeded = true {
+//	currenthealth = currenthealth - 1
+//}
+
+// Skirmish
+if currenthealth <= 0 and place_meeting(x, y + 90, obj_unitoverlord) = true {
 	currenthealth = 1
-	skirmishtarget = instance_position(x - 20, y, obj_unitoverlord)
+	skirmishtarget = instance_position(x, y + 90, obj_unitoverlord)
 	skirmishtarget.currenthealth -= 1
 	skirmishtarget = noone
 }
