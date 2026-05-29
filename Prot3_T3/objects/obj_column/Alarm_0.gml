@@ -13,9 +13,9 @@ if columnmemberlocation = true {
 			alarm[1] = 1
 		}
 		
-		//if columnmember1 = noone and columnmember2 = noone and columnmember3 = noone {
-		//	game_restart()
-		//}
+		if columnmember1 = noone and columnmember2 = noone and columnmember3 = noone {
+			game_restart()
+		}
 }
 
 columnmemberlocation = false

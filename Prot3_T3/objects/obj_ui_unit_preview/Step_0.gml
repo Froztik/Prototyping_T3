@@ -30,20 +30,74 @@ if global.unit = global.footsoldier {
 	image_index = 2
 	
 	if obj_ui_footsoldier.amount = 1 && store_lock = false {
-		instance_create_layer((x+110), (y-30), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+110), (y-50), "Linst_stats", obj_stored_unit)
 		store_lock = true
 	}
 	if obj_ui_footsoldier.amount = 2 && store_lock = false {
-		instance_create_layer((x+110), (y-30), "Linst_stats", obj_stored_unit)
-		instance_create_layer((x+260), (y-30), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+110), (y-50), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-50), "Linst_stats", obj_stored_unit)
 		store_lock = true
 	}
 	if obj_ui_footsoldier.amount = 3 && store_lock = false {
-		instance_create_layer((x+110), (y-30), "Linst_stats", obj_stored_unit)
-		instance_create_layer((x+260), (y-30), "Linst_stats", obj_stored_unit)
-		instance_create_layer((x+410), (y-30), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+110), (y-65), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-65), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-65), "Linst_stats", obj_stored_unit)
 		store_lock = true
 	}
+	if obj_ui_footsoldier.amount = 4 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	if obj_ui_footsoldier.amount = 5 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-23), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	if obj_ui_footsoldier.amount = 6 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-23), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	if obj_ui_footsoldier.amount = 7 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-23), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y+20), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	if obj_ui_footsoldier.amount = 8 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-23), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y+20), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y+20), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	
+	
 }
 
 if global.unit = global.archer {
@@ -56,15 +110,33 @@ if global.unit = global.archer {
 	}
 	if obj_ui_archer.amount = 2 && store_lock = false {
 		instance_create_layer((x+110), (y-30), "Linst_stats", obj_stored_unit)
-		instance_create_layer((x+260), (y-30), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+235), (y-30), "Linst_stats", obj_stored_unit)
 		store_lock = true
 	}
 	if obj_ui_archer.amount = 3 && store_lock = false {
 		instance_create_layer((x+110), (y-30), "Linst_stats", obj_stored_unit)
-		instance_create_layer((x+260), (y-30), "Linst_stats", obj_stored_unit)
-		instance_create_layer((x+410), (y-30), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+235), (y-30), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+360), (y-30), "Linst_stats", obj_stored_unit)
 		store_lock = true
 	}
+	if obj_ui_archer.amount = 4 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	if obj_ui_archer.amount = 5 && store_lock = false {
+		instance_create_layer((x+110), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-66), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+410), (y-66), "Linst_stats", obj_stored_unit)
+		
+		instance_create_layer((x+110), (y-23), "Linst_stats", obj_stored_unit)
+		instance_create_layer((x+260), (y-23), "Linst_stats", obj_stored_unit)
+		store_lock = true
+	}
+	
 }
 
 
