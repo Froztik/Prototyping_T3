@@ -1,3 +1,5 @@
+event_inherited()
+
 maxhealth = 3
 currenthealth = 3
 

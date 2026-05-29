@@ -1,5 +1,9 @@
 event_inherited()
 
+
+
+
+
 paladinfloorbuff = 3
 paladinceilingbuff = 3
 

@@ -44,10 +44,10 @@ if free {
 	}
 }
 
-if !free {
-	instance_destroy((instance_nearest(mouse_x, mouse_y, obj_unitoverlord)))
-	free = true
-}
+//if !free {
+//	instance_destroy((instance_nearest(mouse_x, mouse_y, obj_unitoverlord)))
+//	free = true
+//}
 
 
 
