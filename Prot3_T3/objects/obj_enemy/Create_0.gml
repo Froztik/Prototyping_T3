@@ -6,23 +6,23 @@ show_debug_message(finalEnemyPower)
 
 if obj_controller.wave >= 1 and obj_controller.wave <= 4 {
 	randomize()
-	enemypower = irandom_range(4, 12)
+	enemypower = irandom_range(1, 12)
 }
 if obj_controller.wave >= 5 and obj_controller.wave <= 9 {
 	randomize()
-	enemypower = irandom_range(8, 24)
+	enemypower = irandom_range(2, 24)
 }
 if obj_controller.wave >= 10 and obj_controller.wave <= 14 {
 	randomize()
-	enemypower = irandom_range(16, 48)
+	enemypower = irandom_range(4, 48)
 }
 if obj_controller.wave >= 15 and obj_controller.wave <= 19 {
 	randomize()
-	enemypower = irandom_range(32, 96)
+	enemypower = irandom_range(8, 96)
 }
 if obj_controller.wave >= 20 {
 	randomize()
-	enemypower = irandom_range(64, 192)
+	enemypower = irandom_range(16, 192)
 }
 
 randomize()
